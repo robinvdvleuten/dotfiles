@@ -2,6 +2,8 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 
+brew "elixir-build"
+brew "exenv"
 brew "git"
 brew "hub"
 brew "mas"

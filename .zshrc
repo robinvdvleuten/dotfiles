@@ -23,6 +23,9 @@ eval "$(nodenv init -)"
 # Load rbenv environment.
 eval "$(rbenv init -)"
 
+# Append exenv bin directory to path env.
+export PATH="$HOME/.exenv/shims:$PATH"
+
 # Initialize the prompt system and choose pure.
 autoload -U promptinit; promptinit
 prompt pure
