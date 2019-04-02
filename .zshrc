@@ -17,6 +17,10 @@ plugins=(asdf git zsh-autosuggestions zsh-syntax-highlighting)
 # Activate oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
+# Active google-cloud-sdk
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+
 # Initialize the prompt system and choose pure.
 autoload -U promptinit; promptinit
 prompt pure
