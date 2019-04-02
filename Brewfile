@@ -2,13 +2,12 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 
-brew "elixir-build"
-brew "exenv"
+brew "asdf"
+brew "coreutils"
 brew "git"
+brew "gpg"
 brew "hub"
 brew "mas"
-brew "nodenv"
-brew "rbenv"
 brew "yarn", args: ["ignore-dependencies"]
 brew "zsh"
 
