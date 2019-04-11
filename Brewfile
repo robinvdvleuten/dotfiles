@@ -9,7 +9,8 @@ brew "gpg"
 brew "hub"
 brew "mas"
 brew "yarn", args: ["ignore-dependencies"]
-brew "zsh"
+brew "zsh",
+brew "watchman"
 
 cask "1password"
 cask "alfred"
