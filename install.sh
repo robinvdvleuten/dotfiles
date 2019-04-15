@@ -21,7 +21,11 @@ npm install --global npm pure-prompt
 
 echo "Cloning dotfiles"
 git clone git@github.com:robinvdvleuten/dotfiles.git "${HOME}/.dotfiles"
+ln -s "${HOME}/.dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
 ln -s "${HOME}/.dotfiles/.zshrc" "${HOME}/.zshrc"
 
 echo "Set macOS preferences"
 source .macos
+
+echo "Let git use global gitignore file"
+git config --global core.excludesfile ~/.gitignore_global
