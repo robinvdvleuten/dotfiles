@@ -1,12 +1,14 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "heroku/brew"
 tap "caskroom/fonts"
 
 brew "asdf"
 brew "coreutils"
 brew "git"
 brew "gpg"
+brew "heroku"
 brew "hub"
 brew "mas"
 brew "yarn", args: ["ignore-dependencies"]
