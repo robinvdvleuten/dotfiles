@@ -9,6 +9,7 @@ brew "coreutils"
 brew "git"
 brew "gpg"
 brew "heroku"
+brew "hivemind"
 brew "hub"
 brew "mas"
 brew "yarn", args: ["ignore-dependencies"]
