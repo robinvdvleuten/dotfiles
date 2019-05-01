@@ -16,6 +16,14 @@ brew bundle
 echo "Installing oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+echo "Checking out asdf-vm + nodejs and ruby plugins"
+if [ ! -d "$HOME/.asdf" ]; then
+  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.1
+
+  asdf plugin-add "ruby" "https://github.com/asdf-vm/asdf-ruby.git"
+  asdf plugin-add "nodejs" "https://github.com/asdf-vm/asdf-nodejs.git"
+fi
+
 echo "Installing a few global NPM packages"
 npm install --global npm pure-prompt
 

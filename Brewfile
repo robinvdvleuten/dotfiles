@@ -4,7 +4,6 @@ tap "homebrew/core"
 tap "heroku/brew"
 tap "caskroom/fonts"
 
-brew "asdf"
 brew "coreutils"
 brew "git"
 brew "gpg"

@@ -24,3 +24,5 @@ source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 # Initialize the prompt system and choose pure.
 autoload -U promptinit; promptinit
 prompt pure
+
+source $HOME/.asdf/asdf.sh
