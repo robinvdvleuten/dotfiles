@@ -25,4 +25,7 @@ source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 autoload -U promptinit; promptinit
 prompt pure
 
+# Initialize direnv hooks for ZSH.
+eval "$(direnv hook zsh)"
+
 source $HOME/.asdf/asdf.sh

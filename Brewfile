@@ -6,6 +6,7 @@ tap "caskroom/fonts"
 
 brew "awscli"
 brew "coreutils"
+brew "direnv"
 brew "git"
 brew "gpg"
 brew "heroku"
