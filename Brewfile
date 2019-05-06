@@ -4,6 +4,7 @@ tap "homebrew/core"
 tap "heroku/brew"
 tap "caskroom/fonts"
 
+brew "awscli"
 brew "coreutils"
 brew "git"
 brew "gpg"
