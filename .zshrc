@@ -29,3 +29,6 @@ prompt pure
 eval "$(direnv hook zsh)"
 
 source $HOME/.asdf/asdf.sh
+
+# Make globally installed Composer packages available.
+export PATH="~/.composer/vendor/bin:$PATH"
