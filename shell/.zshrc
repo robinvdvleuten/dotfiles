@@ -1,8 +1,19 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Hide username in prompt
 DEFAULT_USER=`whoami`
+
+# Minimal - Theme Settings
+export MNML_INSERT_CHAR="$"
+export MNML_PROMPT=(mnml_git mnml_keymap)
+export MNML_RPROMPT=('mnml_cwd 20')
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="minimal"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/

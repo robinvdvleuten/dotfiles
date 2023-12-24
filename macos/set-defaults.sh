@@ -11,6 +11,12 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
+# Set computer name (as done via System Preferences → Sharing)
+sudo scutil --set ComputerName "Macbook Robin"
+sudo scutil --set HostName "Macbook Robin"
+sudo scutil --set LocalHostName "Macbook Robin"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Macbook Robin"
+
 # Disable the sound effects on boot
 # sudo nvram SystemAudioVolume=" "
 
@@ -189,8 +195,8 @@ defaults write com.apple.screencapture "name" -string "screenshot"
 # Prevent applications from bouncing in Dock
 defaults write com.apple.dock no-bouncing -bool true
 
-# Set the icon size of Dock items to 72 pixels
-defaults write com.apple.dock tilesize -int 72
+# Set the icon size of Dock items to 36 pixels
+defaults write com.apple.dock tilesize -int 36
 
 # Hide indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool false
@@ -209,12 +215,25 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 # Don’t automatically rearrange Spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
+
+# Don’t show recent applications in Dock
+defaults write com.apple.dock show-recents -bool false
+
+# Disable the Launchpad gesture (pinch with thumb and three fingers)
+#defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
 
 ###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################
+
+# Privacy: don’t send search queries to Apple
+defaults write com.apple.Safari UniversalSearchEnabled -bool false
+defaults write com.apple.Safari SuppressSearchSuggestions -bool true
 
 # Enable Safari’s debug menu
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true

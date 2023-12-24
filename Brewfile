@@ -1,3 +1,6 @@
+# Taps
+tap 'homebrew/cask-fonts'
+
 # Binaries
 brew 'mackup'
 brew 'mas' # Mac App Store manager
@@ -13,6 +16,9 @@ cask 'iterm2'
 cask 'spotify'
 cask 'tower'
 cask 'visual-studio-code'
+
+# Fonts
+cask 'font-source-code-pro-for-powerline'
 
 # Mac App Store
 mas 'Things', id: 904280696

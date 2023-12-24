@@ -47,3 +47,12 @@ brew bundle --file ./Brewfile
 
 # Create a projects directories
 mkdir $HOME/Developer
+
+echo '++++++++++++++++++++++++++++++'
+echo 'Some optional tidbits'
+
+echo '1. If you have not backed up via Mackup yet, then run `mackup backup` to symlink preferences for a wide collection of apps to your iCloud drive. If you already had a backup via mackup run `mackup restore` You'\''ll find more info on Mackup here: https://github.com/lra/mackup.'
+echo '2. Set some sensible macos defaults by running: $HOME/dotfiles/macos/set-defaults.sh'
+
+echo '++++++++++++++++++++++++++++++'
+echo '++++++++++++++++++++++++++++++'
