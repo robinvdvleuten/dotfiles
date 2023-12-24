@@ -19,6 +19,8 @@ cask 'tower'
 cask 'visual-studio-code'
 
 # Fonts
+cask 'font-jetbrains-mono-nerd-font'
+cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro-for-powerline'
 
 # Mac App Store
