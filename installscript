@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# Hide "last login" line when starting a new terminal session
+touch $HOME/.hushlogin
+
+# Check for Oh My Zsh and install if we don't have it
+if test ! $(which omz); then
+  echo 'Install oh-my-zsh'
+  echo '-----------------'
+  curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh
+fi
+
+# Check for Homebrew and install if we don't have it
+if test ! $(which brew); then
+  echo 'Install homebrew'
+  echo '-----------------'
+  curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+# Add global gitignore
+rm $HOME/.gitignore-global
+ln -s $HOME/dotfiles/shell/.gitignore-global $HOME/.gitignore-global
+git config --global core.excludesfile $HOME/.gitignore-global
+
+# Set global git configuration
+git config --global user.name "Robin van der Vleuten"
+git config --global user.email robin@webstronauts.com
+
+# Symlink zsh prefs
+rm $HOME/.zshrc
+ln -s $HOME/dotfiles/shell/.zshrc $HOME/.zshrc
+
+# Symlink the Mackup config
+rm $HOME/.mackup.cfg
+ln -s $HOME/dotfiles/macos/.mackup.cfg $HOME/.mackup.cfg
+
+# Update Homebrew recipes
+brew cleanup
+brew update
+
+# Install all our dependencies with bundle (See Brewfile)
+brew tap homebrew/bundle
+brew bundle --file ./Brewfile
+
+# Create a projects directories
+mkdir $HOME/Developer
