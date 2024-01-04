@@ -13,10 +13,13 @@ cask '1password'
 cask '1password-cli'
 cask 'alfred'
 cask 'docker'
+cask 'google-chrome'
 cask 'iterm2'
+cask 'nordvpn'
 cask 'spotify'
 cask 'tower'
 cask 'visual-studio-code'
+cask 'zwift'
 
 # Fonts
 cask 'font-jetbrains-mono-nerd-font'
