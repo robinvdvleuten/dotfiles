@@ -193,13 +193,13 @@ defaults write com.apple.screencapture "name" -string "screenshot"
 ###############################################################################
 
 # Prevent applications from bouncing in Dock
-defaults write com.apple.dock no-bouncing -bool true
+# defaults write com.apple.dock no-bouncing -bool true
 
 # Set the icon size of Dock items to 36 pixels
 defaults write com.apple.dock tilesize -int 36
 
 # Hide indicator lights for open applications in the Dock
-defaults write com.apple.dock show-process-indicators -bool false
+# defaults write com.apple.dock show-process-indicators -bool false
 
 # Wipe all (default) app icons from the Dock
 # This is only really useful when setting up a new Mac, or if you don’t use
@@ -225,7 +225,7 @@ defaults write com.apple.dock showhidden -bool true
 defaults write com.apple.dock show-recents -bool false
 
 # Disable the Launchpad gesture (pinch with thumb and three fingers)
-#defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
+# defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
 
 ###############################################################################
 # Safari & WebKit                                                             #
