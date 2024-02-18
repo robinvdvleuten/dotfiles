@@ -16,6 +16,8 @@ cask 'docker'
 cask 'google-chrome'
 cask 'iterm2'
 cask 'nordvpn'
+cask 'notion'
+cask 'raycast'
 cask 'spotify'
 cask 'tower'
 cask 'visual-studio-code'
@@ -23,7 +25,6 @@ cask 'zwift'
 
 # Fonts
 cask 'font-jetbrains-mono-nerd-font'
-cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro-for-powerline'
 
 # Mac App Store

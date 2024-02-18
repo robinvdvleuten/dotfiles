@@ -46,7 +46,7 @@ brew tap homebrew/bundle
 brew bundle --file ./Brewfile
 
 # Create a projects directories
-mkdir $HOME/Developer
+mkdir -p $HOME/Developer
 
 echo '++++++++++++++++++++++++++++++'
 echo 'Some optional tidbits'
