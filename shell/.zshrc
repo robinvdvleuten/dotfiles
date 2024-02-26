@@ -25,6 +25,9 @@ source $ZSH/oh-my-zsh.sh
 # Enable autosuggestions
 . $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Enable syntax highlighting
+. $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Set up asdf
 . $(brew --prefix asdf)/libexec/asdf.sh
 

@@ -8,6 +8,7 @@ brew 'mas' # Mac App Store manager
 # Development
 brew 'asdf'
 brew 'zsh-autosuggestions'
+brew 'zsh-syntax-highlighting'
 
 # Apps
 cask '1password'
