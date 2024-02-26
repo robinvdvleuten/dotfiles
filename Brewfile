@@ -25,6 +25,7 @@ cask 'zwift'
 
 # Fonts
 cask 'font-jetbrains-mono-nerd-font'
+cask 'font-menlo-for-powerline'
 cask 'font-source-code-pro-for-powerline'
 
 # Mac App Store
