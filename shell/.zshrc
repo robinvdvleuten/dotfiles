@@ -22,6 +22,9 @@ plugins=(git 1password macos)
 
 source $ZSH/oh-my-zsh.sh
 
+# Enable autosuggestions
+. $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # Set up asdf
 . $(brew --prefix asdf)/libexec/asdf.sh
 
