@@ -28,8 +28,8 @@ source $ZSH/oh-my-zsh.sh
 # Enable syntax highlighting
 . $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Set up asdf
-. $(brew --prefix asdf)/libexec/asdf.sh
+# Set up mise-en-place
+eval "$(mise activate zsh)"
 
 # do not update all homebrew stuff automatically
 export HOMEBREW_NO_AUTO_UPDATE=1

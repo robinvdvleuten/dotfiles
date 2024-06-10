@@ -6,14 +6,13 @@ brew 'mackup'
 brew 'mas' # Mac App Store manager
 
 # Development
-brew 'asdf'
+brew 'mise'
 brew 'zsh-autosuggestions'
 brew 'zsh-syntax-highlighting'
 
 # Apps
 cask '1password'
 cask '1password-cli'
-cask 'alfred'
 cask 'docker'
 cask 'google-chrome'
 cask 'iterm2'
