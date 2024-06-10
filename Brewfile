@@ -1,6 +1,3 @@
-# Taps
-tap 'homebrew/cask-fonts'
-
 # Binaries
 brew 'mackup'
 brew 'mas' # Mac App Store manager
@@ -25,6 +22,7 @@ cask 'visual-studio-code'
 cask 'zwift'
 
 # Fonts
+cask 'font-caskaydia-mono-nerd-font'
 cask 'font-jetbrains-mono-nerd-font'
 cask 'font-menlo-for-powerline'
 cask 'font-source-code-pro-for-powerline'
